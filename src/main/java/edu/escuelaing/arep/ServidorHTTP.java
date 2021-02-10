@@ -23,12 +23,12 @@ public class ServidorHTTP
 	private CBaseDatos conexion = null;
 	
 	/**
-	 * Iniciamos el servidor, usamos el puerto de arranque
+	 * Iniciamos el servidor, usamos el puerto 4000
 	 * @throws IOException Exception IO
 	 */
 	public void start() throws IOException {
 		
-		int port = getPort();
+		int port = 4000;
 		conexion = new CBaseDatos();
 		
 		while(true) {
@@ -39,7 +39,7 @@ public class ServidorHTTP
 			try {
 				serverSocket = new ServerSocket(port);
 			} catch (IOException e) {
-                System.err.println("Could not listen on port: 35000.");
+                System.err.println("Could not listen on port: 4000.");
                 System.exit(1);
             }
 			Socket clientSocket = null;

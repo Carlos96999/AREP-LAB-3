@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 public class CBaseDatos 
 {
-	private static String uri = "jdbc:postgres://ec2-52-22-161-59.compute-1.amazonaws.com:5432/dcj5a30d7jbrrs?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory";
+	private static String uri = "jdbc:postgresql://ec2-52-22-161-59.compute-1.amazonaws.com:5432/dcj5a30d7jbrrs?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory";
 	private static String user = "kizhwnyfcprcrf";
 	private static String password = "4bbe1d4f18ee9597c69c8ca3d485a0dc6d63a79bd7a2068fe30629500163c081";
 	private static Connection conexion = null;
