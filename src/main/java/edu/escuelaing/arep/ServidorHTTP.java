@@ -13,7 +13,6 @@ import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.ArrayList;
-
 import javax.imageio.ImageIO;
 
 public class ServidorHTTP
@@ -23,12 +22,12 @@ public class ServidorHTTP
 	private CBaseDatos conexion = null;
 	
 	/**
-	 * Iniciamos el servidor, usamos el puerto 4000
+	 * Iniciamos el servidor, usamos el puerto arranque
 	 * @throws IOException Exception IO
 	 */
 	public void start() throws IOException {
 		
-		int port = 4000;
+		int port = getPort();
 		conexion = new CBaseDatos();
 		
 		while(true) {
@@ -39,7 +38,7 @@ public class ServidorHTTP
 			try {
 				serverSocket = new ServerSocket(port);
 			} catch (IOException e) {
-                System.err.println("Could not listen on port: 4000.");
+                System.err.println("Could not listen on port: 35000.");
                 System.exit(1);
             }
 			Socket clientSocket = null;
