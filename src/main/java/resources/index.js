@@ -1,0 +1,1 @@
+alert("Bienvenido a Osito Gominola, donde encontrarás los gominolas para ti");
