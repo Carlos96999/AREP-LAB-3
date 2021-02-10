@@ -54,7 +54,7 @@ public class CBaseDatos
 	public ArrayList<String[]> getGoma(){
 		
 		ArrayList<String[]> lista = new ArrayList<>();
-		String select = "SELECT * FROM partidos;";
+		String select = "SELECT * FROM gomas;";
 		try {
 			Statement  statement = conexion.createStatement();
 			ResultSet resultSet = statement.executeQuery(select);
