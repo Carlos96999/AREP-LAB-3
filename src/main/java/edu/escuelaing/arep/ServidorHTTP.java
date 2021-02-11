@@ -110,10 +110,10 @@ public class ServidorHTTP
 		String file = Spark.get(app);
 		
 		if(app.equals("/gomas")) {
-			file = "Inventarios";
+			file = "Inventarios\n";
 			ArrayList<String[]> gomitas = conexion.getGoma();
 			for(String[] goma : gomitas) {
-				file = file + " Gomita - " + goma[0] + " " + goma[1] + " " + goma[2] + " " + goma[3]+" \n";
+				file = file + " Gomita - " + goma[0] + " " + goma[1] + " " + goma[2] + " " + goma[3]+"\n";
 			}
 			return line + file;
 			
